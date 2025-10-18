@@ -9,7 +9,19 @@ The API is simple and composable, so you can produce, transform, and consume dat
 |------|------------------------------------------------------------------------------------------------------|
 | main | ![Java CI with Gradle](https://github.com/breuerlukas/iteron/actions/workflows/gradle.yml/badge.svg) |
 
-## Usage
+## Installation
+
+```
+repositories {
+  maven("https://maven.pkg.github.com/breuerlukas/iteron")
+}
+
+dependencies {
+    implementation("de.lukasbreuer:iteron:1.0.0-SNAPSHOT")
+}
+```
+
+## Example
 
 ```java
 var original = Lists.newArrayList(1, 2, 3);
