@@ -17,7 +17,7 @@ repositories {
 }
 
 dependencies {
-    implementation("de.lukasbreuer:iteron:1.0.0-SNAPSHOT")
+  implementation("de.lukasbreuer:iteron:1.0.0-SNAPSHOT")
 }
 ```
 
