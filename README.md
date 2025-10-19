@@ -13,7 +13,13 @@ The API is simple and composable, so you can produce, transform, and consume dat
 
 ```
 repositories {
-  maven("https://maven.pkg.github.com/breuerlukas/iteron")
+  maven {
+    url = uri("https://maven.pkg.github.com/breuerlukas/iteron")
+    credentials {
+      username = project.findProperty("gpr.user")?.toString() ?: System.getenv("GITHUB_USERNAME")
+      password = project.findProperty("gpr.token")?.toString() ?: System.getenv("GITHUB_TOKEN")
+    }
+  }
 }
 
 dependencies {
